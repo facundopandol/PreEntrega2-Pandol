@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    background-color: darkgoldenrod;
+}
+
+.barraNavegacion {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+#nombreComercio {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    border-color: black;
+    border-style: double;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.tituloInicio {
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    margin-top: 2rem;
+    width: 50%;
+}
+
+.imagenInicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 50%;
+}
+
+h4 {
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.redes {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+
+.tiposCarne {
+    color: firebrick;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+h2 {
+    color: darkred;
+    font-size: 2rem;
+    margin-left: 30%;
+    padding-top: 2rem;
+}
+
+.tablaProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+thead {
+    font-size: 1.3rem;
+}
+
+#recetas div {
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: yellowgreen;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    font-size: 3rem;
+    color: darkgreen;
+    text-align: center;
+}
+
+.historia {
+    padding-top: 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+
+}
+
+.ubicacionHorario p {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.ubicacion h3 {
+    text-align: center;
+}
+
+.mapaUbicacion iframe {
+    display: flex;
+    align-items: center;
+    margin-left: 33rem;
+}
+
+#formulario {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+
+}
+
