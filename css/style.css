@@ -9,47 +9,49 @@ body {
     background-color: black;
 }
 
-.barraNavegacion {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
-    background-color: white;
-}
 
 a {
     text-decoration: none;
-    color: grey;
+
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    gap: 1rem;
+}
+
+h1 {
+    font-size: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #nombreComercio {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     margin-top: 2rem;
-    border-color: black;
+    border-color: white;
     border-style: double;
     margin-right: 2rem;
     margin-left: 2rem;
 }
 
 .tituloInicio {
-    font-size: 4rem;
-    color: black;
-    text-align: center;
-    margin-top: 2rem;
-    width: 50%;
+    display: flex;
+    color: white;
 }
 
 .imagenInicio {
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    width: 50%;
 }
 
 h4 {
-    color: black;
+    color: red;
     font-size: 1rem;
     text-align: center;
 }
@@ -64,50 +66,54 @@ h4 {
 }
 
 
-
-.tiposCarne {
-    color: firebrick;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-}
-
 h2 {
+    display: flex;
     color: darkred;
     font-size: 2rem;
-    margin-left: 30%;
-    padding-top: 2rem;
+    padding: 2rem;
+    justify-content: center;
 }
 
 .productosCarneBovina {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    padding: 25px;
+    align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
 }
 
 .productosCarneCerdo {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    padding: 25px;
+    align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .productosPollo {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    padding: 25px;
+    align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.productosAchuras {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card {
-
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     background-color: white;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     filter: brightness(20%)
 }
 
@@ -115,6 +121,13 @@ h2 {
     padding: 2px 16px;
 }
 
+.container h4 {
+    color: black;
+}
+
+header {
+    background-image: url(../assets/img/fuego2.jpg);
+}
 
 #recetas div {
     font-size: 2rem;
@@ -122,12 +135,12 @@ h2 {
 }
 
 footer {
-    background-color: yellowgreen;
+    background-image: url(../assets/img/fuego2.jpg);
     position: relative;
     width: 100%;
     margin-top: 50px;
     font-size: 1rem;
-    color: black;
+    color: red;
     text-align: center;
 }
 
@@ -145,6 +158,12 @@ h3 {
 
 }
 
+p {
+    color: white;
+
+}
+
+
 .ubicacionHorario p {
     font-size: 1.3rem;
     text-align: center;
@@ -161,10 +180,88 @@ h3 {
 }
 
 #formulario {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.imagenFormulario {
+    display: flex;
+    align-items: center;
+}
+
+
+.textoFormulario {
     font-size: 1.2rem;
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
-    justify-content: space-evenly;
-
+    color: white;
+    padding-left: 50px;
+    margin-left: 20px;
 }
+
+.textoFormulario input,
+textarea {
+    font-family: inherit;
+    font-size: 80%;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+}
+
+
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+
+form input[type="reset"]:hover {
+    cursor: pointer;
+}
+
+
+
+/* medias query*/
+
+@media screen and (max-width:767px){
+    .imagenFormulario {
+        display: none;
+    }
+
+    .textoFormulario {
+        background-image: url(../assets/img/Cortes-de-carne-de-res-para-asar-750x500.png);
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.5rem;
+        color: white;
+        padding: 2rem;
+    }
+
+    h2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .imagenInicio {
+        display: none;
+    }
+
+    .tituloInicio {
+        font-size: 10rem;
+        color: white;
+        text-align: center;
+        justify-content: left;
+        background-image: url(../assets/img/istockphoto-1212824120-612x612.jpg);
+    }
+ }
+    @media screen and (min-width:768px) and (max-width:1023px) {
+
+        #formulario {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem;
+            margin: 0.5rem;
+        }
+    }
