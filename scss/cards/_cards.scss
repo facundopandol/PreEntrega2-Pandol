@@ -1,0 +1,40 @@
+.card {
+    transition: 0.3s;
+    background-color: white;
+
+    &:hover {
+        filter: brightness(20%)
+    }
+}
+
+.container {
+    padding: 2px 16px;
+
+    h4 {
+        color: black;
+    }
+}
+
+
+
+.productosCarneBovina {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+}
+
+.productosCarneCerdo {
+    @extend .productosCarneBovina;
+}
+
+.productosPollo {
+    @extend .productosCarneBovina; 
+}
+
+
+.productosAchuras {
+    @extend .productosCarneBovina;
+}

@@ -1,0 +1,18 @@
+
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/fuego2.jpg");
+    width: 100%;
+    margin-top: 50px;
+    font-size: 1rem;
+    color: red;
+    text-align: center;
+
+    .redes {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: none;
+        margin-bottom: 0%;
+    }
+}

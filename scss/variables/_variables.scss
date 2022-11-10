@@ -1,0 +1,36 @@
+
+body {
+    font-family: 'Mukta', sans-serif;
+    background-color: black;
+}
+
+h1 {
+    font-size: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    color: darkred;
+    font-size: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 2rem;
+    color: darkgreen;
+    text-align: center;
+}
+
+h4 {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+}
+
+p {
+    color: white;
+}

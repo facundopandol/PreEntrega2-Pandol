@@ -1,0 +1,37 @@
+#formulario {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    img {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+.textoFormulario {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding-left: 50px;
+    margin-left: 20px;
+    input, 
+    textarea {
+        font-family: inherit;
+        font-size: 80%;
+        border: 1px solid #f6f6f6;
+        border-radius: 5px;
+    }
+}
+
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+
+form input[type="reset"]:hover {
+    cursor: pointer;
+}
