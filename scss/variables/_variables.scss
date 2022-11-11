@@ -1,11 +1,18 @@
+$paleta_de_colores:(
+    primario: white,
+    secundario: darkred,
+    terciario: green,
+    cuaternario: red,
+);
 
 body {
     font-family: 'Mukta', sans-serif;
     background-color: black;
 }
 
+
 h1 {
-    font-size: 5rem;
+    font-size: 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -13,24 +20,25 @@ h1 {
 
 h2 {
     display: flex;
-    color: darkred;
+    color: map-get($paleta_de_colores, secundario);
     font-size: 2rem;
     padding: 2rem;
     justify-content: center;
+    align-items: center;
 }
 
 h3 {
     font-size: 2rem;
-    color: darkgreen;
+    color: map-get($paleta_de_colores, terciario);
     text-align: center;
 }
 
 h4 {
-    color: red;
+    color: map-get($paleta_de_colores, cuaternario);
     font-size: 1rem;
     text-align: center;
 }
 
 p {
-    color: white;
+    color: map-get($paleta_de_colores, primario);
 }

@@ -4,7 +4,7 @@ footer {
     width: 100%;
     margin-top: 50px;
     font-size: 1rem;
-    color: red;
+    color: map-get($paleta_de_colores, cuaternario);
     text-align: center;
 
     .redes {

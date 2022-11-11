@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,11 +26,12 @@ h2 {
   font-size: 2rem;
   padding: 2rem;
   justify-content: center;
+  align-items: center;
 }
 
 h3 {
   font-size: 2rem;
-  color: darkgreen;
+  color: green;
   text-align: center;
 }
 
@@ -122,7 +123,7 @@ header .navbar-brand {
   background-color: white;
 }
 .card:hover {
-  filter: brightness(20%);
+  filter: brightness(40%);
 }
 
 .container {
@@ -175,7 +176,11 @@ form input[type=reset]:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 420px) and (max-width: 767px) {
+  #formulario img {
+    display: none;
+    align-items: center;
+  }
   .imagenFormulario {
     display: none;
   }
@@ -213,7 +218,7 @@ form input[type=reset]:hover {
   }
   h3 {
     font-size: 1.5rem;
-    color: darkgreen;
+    color: green;
     text-align: center;
   }
 }
@@ -225,8 +230,8 @@ form input[type=reset]:hover {
     margin-top: 2rem;
     border-color: white;
     border-style: double;
-    margin-right: 2rem;
     margin-left: 2rem;
+    margin-right: 2rem;
   }
   #nombreComercio h1 {
     color: white;
