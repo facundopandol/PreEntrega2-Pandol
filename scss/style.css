@@ -105,7 +105,7 @@ header .navbar-brand {
   text-align: justify;
   padding-left: 5rem;
   padding-right: 5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .ubicacionHorario p {
@@ -252,4 +252,32 @@ form input[type=reset]:hover {
     padding: 0.5rem;
     margin: 0.5rem;
   }
+}
+@media screen and (min-width: 290px) and (max-width: 425px) {
+  #nombreComercio h1 {
+    font-size: 4.5rem;
+  }
+  .tituloInicio {
+    color: white;
+    text-align: center;
+    justify-content: left;
+  }
+  .imagenInicio {
+    display: none;
+  }
+}
+.productosCarneBovina, .productosCarneCerdo, .productosPollo, .productosAchuras {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+}
+
+h2 {
+  display: flex;
+  color: darkred;
+  font-size: 1.8rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
