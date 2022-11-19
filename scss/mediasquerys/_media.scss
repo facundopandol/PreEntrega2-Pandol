@@ -29,7 +29,6 @@
     }
 
     .tituloInicio {
-        font-size: 10rem;
         color: white;
         text-align: center;
         justify-content: left;
@@ -97,36 +96,152 @@
 
 @media screen and (min-width:290px) and (max-width:425px) {
 
-    #nombreComercio h1 {
-        font-size: 4.5rem;
+    #nombreComercio {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin-right: 5rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/img/istockphoto-1212824120-320x612.jpg);
+
+        h1 {
+            text-align: center;
+            font-size: 4.5rem;
+        }
+
+        img {
+            display: none;
+        }
     }
 
-    .tituloInicio {
-        color: white;
+    .productosCarneBovina {
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+    }
+
+    .productosCarneCerdo {
+        @extend .productosCarneBovina;
+    }
+
+    .productosPollo {
+        @extend .productosCarneBovina;
+    }
+
+
+    .productosAchuras {
+        @extend .productosCarneBovina;
+    }
+
+    .card {
+        width: 35%;
+    }
+
+    .container {
+        padding: 2px 8px;
+
+        h4 {
+            font-size: 0.8rem;
+        }
+    }
+
+    h2 {
+        display: flex;
+        color: map-get($paleta_de_colores, secundario);
+        font-size: 1.5rem;
+        padding: 1rem;
+        justify-content: center;
         text-align: center;
-        justify-content: left;
-
     }
 
-    .imagenInicio {
+    .tablaProductos h3 {
+        font-size: 1.5rem;
+    }
+
+
+    #recetas div {
+        font-size: 2rem;
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        iframe {
+            width: 225px;
+            height: 131.25px;
+        }
+
+        h3 {
+            font-size: 1rem;
+            color: map-get($paleta_de_colores, terciario);
+            text-align: center;
+        }
+    }
+
+    .historia {
+        padding-top: 2rem;
+        text-align: justify;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .ubicacionHorario p {
+        font-size: 0.8rem;
+        text-align: center;
+        h3 {
+            font-size: 0.8rem;
+        }
+    
+    }
+    
+    .mapaUbicacion {
+        display: flex;
+        justify-content: center;
+        iframe{
+            width: 225px;
+            height: 168.75px
+                }
+    }
+
+    #formulario {
+
+        img {
+            display: none;
+            align-items: center;
+        }
+    }
+
+    .imagenFormulario {
         display: none;
     }
 
-}
+    .textoFormulario {
+        background-image: url(../assets/img/Cortes-de-carne-de-res-para-asar-750x500.png);
+        display: flex;
+        flex-direction: row;
+        color: white;
+        padding: 0.1rem;
+    }
 
 
-.productosCarneBovina {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    row-gap: 0.5rem;
-}
+    footer {
+        h4 {
+            font-size: 0.5rem;
+        }
 
-h2 {
-    display: flex;
-    color: map-get($paleta_de_colores, secundario);
-    font-size: 1.8rem;
-    padding: 2rem;
-    justify-content: center;
-    align-items: center;
+        p {
+            font-size: 0.8rem;
+            margin: 0%;
+        }
+
+        ul.redes {
+            padding: 0%;
+
+            img {
+                height: 1.5rem;
+            }
+        }
+    }
 }
