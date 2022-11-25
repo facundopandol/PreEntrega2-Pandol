@@ -46,15 +46,25 @@
             width: 300px;
             height: 175px;
         }
+
+        h3 {
+            font-size: 1.5rem;
+            color: map-get($paleta_de_colores, terciario);
+            text-align: center;
+        }
     }
 
-    h3 {
-        font-size: 1.5rem;
-        color: map-get($paleta_de_colores, terciario);
-        text-align: center;
+    .mapaUbicacion {
+        display: flex;
+        justify-content: center;
+
+        iframe {
+            width: 400px;
+            height: 225px;
+            border-radius: 25px;
+        }
     }
 }
-
 
 
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -75,6 +85,7 @@
             display: flex;
             justify-content: center;
             height: 100%;
+            text-align: center;
         }
 
         img {
@@ -91,8 +102,15 @@
         padding: 0.5rem;
         margin: 0.5rem;
     }
-}
 
+    .mapaUbicacion {
+        iframe {
+            width: 600px;
+            height: 300px;
+            border-radius: 25px;
+        }
+    }
+}
 
 @media screen and (min-width:290px) and (max-width:425px) {
 
@@ -190,19 +208,22 @@
     .ubicacionHorario p {
         font-size: 0.8rem;
         text-align: center;
+
         h3 {
             font-size: 0.8rem;
         }
-    
+
     }
-    
+
     .mapaUbicacion {
         display: flex;
         justify-content: center;
-        iframe{
-            width: 225px;
-            height: 168.75px
-                }
+
+        iframe {
+            width: 270px;
+            height: 200px;
+            border-radius: 25px;
+        }
     }
 
     #formulario {
@@ -222,7 +243,7 @@
         display: flex;
         flex-direction: row;
         color: white;
-        padding: 0.1rem;
+        padding: 1rem;
     }
 
 
@@ -244,4 +265,49 @@
             }
         }
     }
+}
+
+@media screen and (min-width:1024px) {
+
+    #nombreComercio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        border-color: white;
+        border-style: double;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        h1 {
+            color: map-get($paleta_de_colores, primario);
+            font-size: 6rem;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+        }
+
+        img {
+            flex-direction: row;
+            width: 30rem;
+        }
+    }
+
+.mapaUbicacion {
+    iframe {
+        border-radius: 25px;
+        width: 800px;
+        height: 400px;
+    }
+}
+
+#formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
 }

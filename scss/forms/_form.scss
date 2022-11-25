@@ -14,15 +14,17 @@
     font-size: 1.2rem;
     display: flex;
     flex-direction: row;
-    color: white;
+    color: map-get($paleta_de_colores, primario);
     padding-left: 50px;
     margin-left: 20px;
+
     input, 
     textarea {
         font-family: inherit;
         font-size: 80%;
         border: 1px solid #f6f6f6;
         border-radius: 5px;
+        width: 100%;
     }
 }
 
