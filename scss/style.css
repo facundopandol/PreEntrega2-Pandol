@@ -147,6 +147,27 @@ main {
   color: black;
 }
 
+.card__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity ease-out 250ms;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card:hover .card__text {
+  opacity: 1;
+}
+
+.card__title {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .productosCarneBovina, .productosAchuras, .productosPollo, .productosCarneCerdo {
   display: flex;
   padding: 25px;
